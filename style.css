@@ -1,0 +1,150 @@
+body {
+    background-color: #161616;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background: none;
+    border: 4px solid;
+    border-image-source: linear-gradient(to right, rgb(137, 11, 255), rgb(252, 15, 114));
+    border-image-slice: 1;
+    margin: auto;
+    padding: 30px;
+    max-width: 480px;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.todo-wrapper p {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: #fff;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: #82f55f;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #d3d3d3;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 3px 20px;
+    background: none;
+    border: 2px solid;
+    color: #fff;
+    border-color: #ff0b91;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    transition-duration: 0.4s;
+}
+
+.todo-wrapper .pretty-button:hover {
+    background-color: chartreuse;
+    border-color: chartreuse;
+    cursor: pointer;
+    color: #161616;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: #40b140;
+}
+
+.todo-wrapper #empty-button {
+    margin: 10px 2px;
+    padding: 3px 20px;
+    background: none;
+    border: 2px solid;
+    color: #fff;
+    border-color: #ff0b91;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.todo-wrapper #empty-button:hover {
+    background-color: #ff0b91;
+    border-color: #ff0b91;
+    color: #161616;
+}
+
+.todo-wrapper #save-button {
+    margin: 10px 2px;
+    padding: 3px 20px;
+    background: none;
+    border: 2px solid;
+    color: #fff;
+    border-color: #ff0b91;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.todo-wrapper #save-button:hover {
+    background-color: rgb(147, 32, 255);
+    border-color: rgb(145, 30, 252);
+    color: #161616;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
