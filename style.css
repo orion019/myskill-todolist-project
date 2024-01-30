@@ -1,5 +1,5 @@
 body {
-    background-color: #161616;
+    background-color: rgb(41, 41, 41);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -16,12 +16,14 @@ body {
 
 .todo-wrapper h2 {
     margin: 0;
+    text-align: center;
     color: #fff;
 }
 
 .todo-wrapper p {
     color: #ffffff;
     margin: 5px 0;
+    text-align: center;
 }
 
 .todo-wrapper ol {
@@ -41,7 +43,7 @@ body {
 }
 
 .todo-wrapper ol li:nth-child(even) {
-    background: #82f55f;
+    background: linear-gradient(to right, rgb(137, 12, 255), rgb(252, 15, 144));
 }
 
 .todo-wrapper .completed {
